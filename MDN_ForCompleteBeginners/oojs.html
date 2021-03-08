@@ -26,13 +26,13 @@
             this.bio = function(){
 
                 alert("花开堪折直须折，莫待无花空折枝");
-            },
-
-            this.greeting = function(){
-
-                alert("Hello, erverybody, my name is " + this.name.first + this.name.last + ", " + "I'm " + this.age + "years old, " + "I'm " + this.gender);
             }
 
+        };
+
+        Person.prototype.greeting = function(){
+
+            alert("Hello, erverybody, my name is " + this.name.first + this.name.last + ", " + "I'm " + this.age + "years old, " + "I'm " + this.gender);
         };
 
 
