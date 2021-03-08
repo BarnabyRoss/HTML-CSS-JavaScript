@@ -12,20 +12,25 @@
 
     <script>
 
-        let person = {
+        function Person(first, last, age, gender){
 
-            name : ['chen', 'tong'],
-            age : 25,
-            gender : 'male',
+            this.name = {
 
-            bio : function(){
-                
-                alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + '.');
+                'first' : first,
+                'last' : last
             },
 
-            greeting: function(){
+            this.age = age,
+            this.gender = gender,
 
-                alert("Hello, my name is " + this.name[0]);
+            this.bio = function(){
+
+                alert("花开堪折直须折，莫待无花空折枝");
+            },
+
+            this.greeting = function(){
+
+                alert("Hello, erverybody, my name is " + this.name.first + this.name.last + ", " + "I'm " + this.age + "years old, " + "I'm " + this.gender);
             }
 
         };
